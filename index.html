@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园失物招领与二手交易平台</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">校园失物招领</div>
+            <ul class="nav-list">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">失物招领</a></li>
+                <li><a href="#">二手平台</a></li>
+                <li><a href="#">发布信息</a></li>
+                <li><a href="#">登录</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>让校园更便利</h1>
+                <p>
+                    在这里发布失物信息，寻找失主，也可以发现身边的实用好物。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" id="view-lost-btn" class="btn primary-btn">
+                        查看失物信息
+                    </a>
+
+                    <a href="#" id="publish-btn" class="btn secondary-btn">
+                        发布信息
+                    </a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="info-item">失物招领</div>
+                <div class="info-item">二手交易</div>
+                <div class="info-item">校园互助</div>
+            </div>
+        </section>
+        <section class="categories">
+            <h2>信息分类</h2>
+            <p class="categories-ts">快速查找自己需要的信息</p>
+            <div class="category-list">
+                <a href="#" class="category-card">
+                    <div class="category-icon">🔍</div>
+                    <h3>失物招领</h3>
+                    <p>寻找丢失的物品</p>
+                    <span>查看详细</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">🛒</div>
+                    <h3>二手交易</h3>
+                    <p>发布和浏览闲置物品</p>
+                    <span>查看详细</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">🤝</div>
+                    <h3>校园互助</h3>
+                    <p>分享校园生活中的帮助信息</p>
+                    <span>查看详细</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">✨</div>
+                    <h3>最新发布</h3>
+                    <p>查看平台最新发布的内容</p>
+                    <span>查看详细</span>
+                </a>
+            </div>
+
+        </section>
+
+
+
+        <section id="lost-items-section" class="lost-items">
+            <h2>最新失物信息</h2>
+            <p class="lost-items-description">最近发布的失物信息</p>
+
+
+            <div class="lost-search">
+                <input id="lost-search" type="text" placeholder="请输入物品名称或地点">
+            </div>
+            <div class="category-filter">
+                <button data-category="全部">全部</button>
+                <button data-category="失物招领">失物招领</button>
+                <button data-category="二手交易">二手交易</button>
+                <button data-category="校园互助">校园互助</button>
+            </div>
+
+            <div class="lost-items-list">
+
+            </div>
+        </section>
+        <section class="publish-section">
+            <h2>发布信息</h2>
+
+            <form id="publish-form">
+                <div class="form-item">
+                    <label for="item-name">物品名称</label>
+                    <input id="item-name" type="text" placeholder="请输入物品名称">
+                </div>
+
+                <div class="form-item">
+                    <label for="item-category">物品分类</label>
+                    <select id="item-category">
+                        <option value="">请选择分类</option>
+                        <option value="失物招领">失物招领</option>
+                        <option value="二手交易">二手交易</option>
+                        <option value="校园互助">校园互助</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label for="item-location">地点</label>
+                    <input id="item-location" type="text" placeholder="例如：图书馆三楼">
+                </div>
+
+                <div class="form-item">
+                    <label for="item-description">详细描述</label>
+                    <textarea id="item-description" placeholder="请输入物品的具体情况"></textarea>
+                </div>
+
+                <div class="form-item">
+                    <label for="item-contact">联系方式</label>
+                    <input id="item-contact" type="text" placeholder="例如：QQ、微信或手机号">
+                </div>
+
+                <button type="submit">提交信息</button>
+            </form>
+        </section>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>校园失物招领</h3>
+                <p>让校园生活更方便，让信息传递更高效。</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">失物招领</a></li>
+                    <li><a href="">二手交易</a></li>
+                    <li><a href="">发布信息</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>联系我们</h3>
+                <p>123456</p>
+                <p>地址：服务中心</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>校园失物招领与二手交易平台</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

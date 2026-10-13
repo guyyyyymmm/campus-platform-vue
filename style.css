@@ -1,0 +1,1141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #207182;
+}
+
+.navbar {
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-list {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: red;
+}
+
+.hero {
+  min-height: 400px;
+  padding: 60px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  margin-bottom: 20px;
+  font-size: 60px;
+  color: #2c3e50;
+}
+
+.hero-content p {
+  max-width: 500px;
+  font-size: 17px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s;
+  border-radius: 6px;
+}
+
+.primary-btn {
+  color: white;
+  background-color: #207182;
+}
+
+.primary-btn:hover {
+  color: #15515d;
+}
+
+.secondary-btn {
+  color: #207182;
+  background-color: white;
+  border: 1px solid #207182;
+}
+
+.secondary-btn:hover {
+  color: white;
+  background-color: #207182;
+}
+
+.hero-card {
+  width: 300px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.info-item {
+  margin-bottom: 15px;
+  padding: 18px;
+  border-radius: 8px;
+  color: #2c3e50;
+  text-align: center;
+  font-size: 18px;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.categories {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.categories h2 {
+  margin-bottom: 12px;
+  font-size: 30px;
+  color: #207182;
+}
+
+.categories-ts {
+  color: black;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.category-list {
+  display: flex;
+  gap: 20px;
+}
+
+.category-card {
+  flex: 1;
+  padding: 28px 20px;
+  background-color: white;
+  text-decoration: none;
+  color: rgb(49, 30, 30);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.category-card:hover {
+  transform: translateX(-10px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.category-icon {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.category-card h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.category-card p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.category-card span {
+  font-size: 15px;
+  color: purple;
+  font-weight: bold;
+}
+
+
+
+
+.lost-items {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 50px;
+}
+
+.lost-items h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 35px;
+
+}
+
+.lost-items-description {
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.lost-items-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.lost-items-card {
+  overflow: hidden;
+  background-color: white;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+
+.lost-items-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.item-image {
+  height: 150px;
+  color: rgb(61, 25, 25);
+  background: #6ec8da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.item-content {
+  padding: 20px;
+}
+
+.item-content h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.item-content p {
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-status {
+  padding: 5px 10px;
+  background-color: rgb(231, 223, 102);
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.item-footer a {
+  text-decoration: none;
+}
+
+.item-footer a:hover {
+  color: #15515d;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.footer {
+  margin-top: 60px;
+  padding: 50px 24px 20px;
+  background-color: #015161;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.footer-section a:hover {
+  color: #6ec8da;
+}
+
+.footer-bottom {
+  margin: 0;
+  padding-top: 50px;
+  max-width: 1200px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+
+/* 手机端响应式布局 */
+@media screen and (max-width: 768px) {
+
+  /* 导航栏 */
+  .navbar {
+    height: auto;
+    min-height: 60px;
+    padding: 14px 20px;
+
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .nav-list {
+    width: 100%;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .nav-list a {
+    font-size: 14px;
+  }
+
+  /* 欢迎区域 */
+  .hero {
+    min-height: auto;
+    padding: 50px 20px;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .hero-content p {
+    max-width: none;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-card {
+    width: 100%;
+  }
+
+  /* 信息分类 */
+  .categories {
+    padding: 45px 20px;
+  }
+
+  .category-list {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .category-card {
+    width: 100%;
+  }
+
+  /* 失物信息 */
+  .lost-items {
+    padding: 45px 20px;
+  }
+
+  .lost-items-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* 页脚 */
+  .footer {
+    padding: 40px 20px 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 28px;
+  }
+}
+
+
+
+
+
+
+
+
+.lost-search {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.lost-search input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 16px;
+
+  border: 1px solid #cbd5dc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+}
+
+.lost-search input:focus {
+  border-color: #207182;
+}
+
+.lost-empty {
+  grid-column: 1 / -1;
+  padding: 40px;
+  color: #607080;
+  text-align: center;
+}
+
+.category-filter {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.category-filter button {
+  padding: 8px 16px;
+  color: #207182;
+  background-color: white;
+  border: 1px solid #207182;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.category-filter button:hover {
+  color: white;
+  background-color: #207182;
+}
+
+
+
+
+.publish-section {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px 24px;
+
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.publish-section h2 {
+  margin-bottom: 24px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.form-item {
+  margin-bottom: 20px;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #cbd5dc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+}
+
+.form-item input:focus {
+  border-color: #207182;
+}
+
+.publish-section button {
+  padding: 12px 24px;
+
+  color: white;
+  background-color: #207182;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.publish-section button:hover {
+  background-color: #15515d;
+}
+
+.form-item select,
+.form-item textarea {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #cbd5dc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.form-item select:focus,
+.form-item textarea:focus {
+  border-color: #207182;
+}
+
+.form-item textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-item select,
+.form-item textarea {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #cbd5dc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.form-item select:focus,
+.form-item textarea:focus {
+  border-color: #207182;
+}
+
+.form-item textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+
+.delete-btn {
+  margin-left: 10px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #d9534f;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #b52b27;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    min-height: 60px;
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-list {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
+  }
+
+  .hero-card {
+    width: 100%;
+  }
+
+  .category-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .category-card {
+    padding: 20px 12px;
+  }
+
+  .category-card h3 {
+    font-size: 22px;
+  }
+
+  .category-card p {
+    font-size: 15px;
+  }
+
+  .lost-items {
+    padding: 40px 20px;
+  }
+
+  .lost-items-list {
+    grid-template-columns: 1fr;
+  }
+
+  .publish-section {
+    padding: 40px 20px;
+  }
+
+  .publish-section form {
+    width: 100%;
+  }
+
+  .item-footer {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .nav-list a {
+    font-size: 14px;
+  }
+
+  .lost-items h2,
+  .categories h2 {
+    font-size: 26px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  color: #2c3e50;
+  background-color: #f7fbfc;
+}
+
+button,
+.btn {
+  cursor: pointer;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #207182;
+  outline-offset: 2px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccd6d9;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.lost-empty {
+  grid-column: 1 / -1;
+  padding: 40px;
+  color: #777;
+  text-align: center;
+  font-size: 18px;
+}
+
+.delete-btn,
+.edit-btn {
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.delete-btn:hover,
+.edit-btn:hover {
+  opacity: 0.8;
+}
+
+.publish-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.publish-section h2 {
+  margin-bottom: 25px;
+  color: #207182;
+  text-align: center;
+}
+
+.form-item {
+  margin-bottom: 18px;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.publish-section button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background-color: #207182;
+  font-size: 16px;
+}
+
+.publish-section button[type="submit"]:hover {
+  background-color: #15515d;
+}
+
+/* ===== 统一视觉优化 ===== */
+
+:root {
+  --primary-color: #207182;
+  --primary-dark: #15515d;
+  --accent-color: #ffe082;
+  --page-bg: #f4f8fa;
+  --card-bg: #ffffff;
+  --text-color: #2c3e50;
+  --muted-color: #6b7c85;
+  --border-color: #d4e0e4;
+  --shadow: 0 8px 24px rgba(32, 113, 130, 0.12);
+}
+
+body {
+  color: var(--text-color);
+  background:
+    linear-gradient(
+      180deg,
+      #eef8fa 0%,
+      #f8fbfc 50%,
+      #f4f8fa 100%
+    );
+  font-family:
+    "Microsoft YaHei",
+    "PingFang SC",
+    Arial,
+    sans-serif;
+}
+
+/* 导航栏 */
+.header {
+  background: linear-gradient(
+    135deg,
+    #15515d,
+    #207182
+  );
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.nav-list a {
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.nav-list a:hover,
+.nav-list a.router-link-active {
+  color: var(--accent-color);
+}
+
+/* 首页按钮 */
+.btn,
+.publish-link,
+.primary-btn,
+.secondary-btn {
+  border-radius: 8px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.btn:hover,
+.publish-link:hover,
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(32, 113, 130, 0.2);
+}
+
+/* 分类卡片 */
+.category-card {
+  border: 1px solid transparent;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  border-color: #b8dce3;
+  box-shadow: 0 14px 30px rgba(32, 113, 130, 0.18);
+}
+
+/* 信息卡片 */
+.lost-items-card,
+.product-card,
+.post-card,
+.user-card,
+.hero-card,
+.publish-section {
+  border: 1px solid rgba(32, 113, 130, 0.08);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+/* 输入框 */
+input,
+select,
+textarea {
+  border-color: var(--border-color);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(32, 113, 130, 0.12);
+  outline: none;
+}
+
+/* 状态标签 */
+.item-status,
+.post-type {
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+/* 页脚 */
+.footer {
+  background: linear-gradient(
+    135deg,
+    #124b58,
+    #207182
+  );
+}
+
+/* 手机端 */
+@media (max-width: 768px) {
+  .nav-list {
+    gap: 12px;
+  }
+
+  .category-card,
+  .lost-items-card,
+  .product-card {
+    border-radius: 12px;
+  }
+}
+
+/* ===== 校园信息服务平台统一设计系统 ===== */
+
+:root {
+  --primary: #207182;
+  --primary-dark: #15515d;
+  --primary-light: #e9f5f7;
+
+  --page-bg: #f4f8fa;
+  --surface: #ffffff;
+  --surface-soft: #f8fbfc;
+
+  --text-main: #253746;
+  --text-secondary: #687b84;
+  --text-muted: #91a1a8;
+
+  --border: #d9e5e8;
+  --success: #5b9b78;
+  --warning: #e2c84c;
+  --danger: #d96b6b;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --shadow-sm:
+    0 4px 14px rgba(32, 113, 130, 0.08);
+
+  --shadow-md:
+    0 10px 28px rgba(32, 113, 130, 0.12);
+
+  --transition:
+    0.25s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--text-main);
+  background:
+    linear-gradient(
+      180deg,
+      #edf8fa 0%,
+      #f8fbfc 52%,
+      #f4f8fa 100%
+    );
+  font-family:
+    "Microsoft YaHei",
+    "PingFang SC",
+    Arial,
+    sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+/* 统一卡片 */
+.category-card,
+.lost-items-card,
+.product-card,
+.post-card,
+.user-card,
+.publish-section,
+.detail-panel {
+  border: 1px solid rgba(32, 113, 130, 0.08);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+/* 统一卡片悬停 */
+.category-card:hover,
+.lost-items-card:hover,
+.product-card:hover,
+.post-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+/* 统一输入框 */
+input,
+select,
+textarea {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-main);
+  background-color: var(--surface);
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow:
+    0 0 0 4px rgba(32, 113, 130, 0.12);
+}
+
+/* 统一按钮 */
+button,
+.btn,
+.publish-link {
+  border-radius: var(--radius-sm);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    background-color var(--transition);
+}
+
+button:hover,
+.btn:hover,
+.publish-link:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 7px 16px rgba(32, 113, 130, 0.16);
+}
+
+/* 统一主按钮 */
+.primary-btn,
+.publish-link,
+form button,
+.publish-section button[type="submit"] {
+  color: white;
+  background-color: var(--primary);
+}
+
+.primary-btn:hover,
+.publish-link:hover,
+form button:hover,
+.publish-section button[type="submit"]:hover {
+  background-color: var(--primary-dark);
+}
+
+/* 统一说明文字 */
+.description,
+.user-card p {
+  color: var(--text-secondary);
+}
+
+/* 统一标签 */
+.item-status,
+.post-type {
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* 统一弹窗 */
+.detail-mask {
+  background-color: rgba(25, 52, 61, 0.42);
+  backdrop-filter: blur(3px);
+}
+
+/* 移动端 */
+@media (max-width: 768px) {
+  .lost-items-list,
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .category-list {
+    grid-template-columns: 1fr;
+  }
+
+  .publish-section {
+    margin: 30px 16px;
+  }
+}
